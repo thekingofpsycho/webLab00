@@ -1,0 +1,63 @@
+
+
+#all{
+	border:10px white solid;
+	background-color:white;
+	
+	
+}
+h1#title{
+	text-align:center;
+	color:white;
+	
+}
+h1#link{
+	color:black;
+	}
+	
+
+	
+.article{
+	border-bottom:2px blue dashed;
+	text-align:right;
+	clear:left;
+	
+}
+.section{
+	border:4px #1D2475 solid;
+	background-color:#CCCCCC;
+	padding:5px;
+	margin:10px;
+	border-radius:15px;
+	clear:left;
+}
+.overall{
+	margin-left:15%;
+	margin-right:15%;
+	background-image:url("blueTextureBG.jpg");
+	}
+
+	
+.overall :hover{
+background-color: yellow;
+}
+
+.profileimg{
+	float:right;
+	}
+	
+#header{
+	overflow:hidden;
+	color:#B7B7B7;
+	font-size:14pt;
+	background-color:#8E8E8E;
+	
+}
+
+div#sidebar{
+border:4px darkblue solid;
+border-radius:15px;
+background-color:blue;
+float:left;
+
+}
