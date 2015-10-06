@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <link href="http://www.hanyang.ac.kr/user/hanyangkr2/mycodyimages/symbol/img_ui04.gif" type="image/jpeg" rel="shortcut icon"/>
-        <link rel="stylesheet" href="resume.css" type="text/css"/>
+        <link rel="stylesheet" href="semanticLayout.css" type="text/css"/>
         <title>Resume</title>
     </head>
     <body class="overall">
         <div id="all">
-            <div id="header">
+            <header>
             <h1 id="title">Gildong Hong</h1>
             <p >
                 <img class="profileimg" src="https://goo.gl/9dqTPN" alt="profile image"/>
@@ -20,9 +20,9 @@
                 <li>010-1234-5678</li>
             </ul>
             
-            </div>
+            </header>
             
-            <div id="sidebar">
+			<aside>
             <h1 id="link">Link</h1>
             <ul>
             <li><a href="http://selab.hanyang.ac.kr/">SE Lab.</a></li>
@@ -30,15 +30,15 @@
             <li><a href="#Education">Education</a></li>
             <li><a href="#Movie">Favorite Movie></a></li>
             </ul>
-            </div>
+            </aside>
             <div class="linkside">
             
-<div class="section">
-            <h2 class="article">Objective</h2>
+<section>
+           <article> <h2>Objective</h2></article>
             <p>My overall objective is <em>to improve large software systems</em> through the development of novel techniques as well as the application of known engineering principles.</p>
-			</div>
-<div class="section">
-            <h2 class="article">Experience</h2>
+			</section>
+<section>
+           <article> <h2>Experience</h2></article>
             <ul>
                 <li>
                     <strong>Software Maven at Hanyang University</strong>, Member<br/>
@@ -49,9 +49,9 @@
                     2012.08 ~ 2013.08
                 </li>
             </ul>
-            </div>
-<div class="section">
-            <h2 class="article">Skills</h2>
+            </section>
+<section>
+           <article> <h2>Skills</h2></article>
             <ol>
                 <li>
                     Programming Languages:
@@ -85,9 +85,9 @@
                     </ul>
                 </li>
             </ol>
-            </div>
-<div class="section" id="Education">
-            <h2 class="article">Education</h2>
+            </section>
+<section id="Education">
+           <article> <h2>Education</h2></article>
             <ul>
                 <li>
                     2015~ M.S., <a href="http://cse.hanyang.ac.kr/">Department of Computer Science &amp; Engineering</a>, Hanyang University, Korea
@@ -99,9 +99,10 @@
                     2011 <a href="localhost">ABC High School</a>, Korea
                 </li>
             </ul>
-            </div>
-<div class="section" id="Movie">
-            <h2 class="article">My Favorite Movies</h2>
+            </section>
+            
+<section id="Movie">
+            <article><h2>My Favorite Movies</h2></article>
             <table>
                 <caption>My favorite movie list</caption>
                 <tr>
@@ -137,27 +138,27 @@
                     <td>Chiristian Bale, Heath Ledger</td>
                 </tr>
             </table>
-            </div>
-<div class="section">
-            <h2 class="article">Movie Trailer from Youtube</h2>
+            </section>
+<section>
+            <article><h2>Movie Trailer from Youtube</h2></article>
             <p>Inception (2010) Official Trailer #1</p>
             <object width="425" height="350"
             type="application/x-shockwave-flash"
             data="https://www.youtube.com/v/YoHD9XEInc0">
                 <param name="wmode" value="transparent" />
             </object>
-            </div>
-<div class="section">
-            <h2 class="article">My Favorite Quote</h2>
+            </section>
+<section>
+            <article><h2>My Favorite Quote</h2></article>
             <blockquote>
                 <p>
                 "Stay hungry. Stay foolish."<br/>
                 &minus;<em>Steve Jobs</em>
                 </p>
             </blockquote>
-            </div>
-<div class="section">
-            <h2 class="article">Short Quiz</h2>
+            </section>
+<section>
+            <article><h2>Short Quiz</h2></article>
             <dl>
                 <dt><abbr title="Domain Name System">DNS</abbr></dt>
                 <dd>a hierarchical distributed naming system for computers, services, or any resource connected to the Internet or a private network. </dd>
@@ -166,7 +167,7 @@
                 <dt><abbr title="Internet Service Provider">ISP</abbr></dt>
                 <dd>an organization that provides services for accessing, using, or participating in the Internet. </dd>
             </dl>
-            </div>
+            </section>
             </div>
             <a href="http://validator.w3.org/check/referer"><img src="http://selab.hanyang.ac.kr/courses/cse326/2015/problems/images/w3c-html.png" alt="html validation link"/></a>
             <a href=" http://jigsaw.w3.org/css-validator/check/referer"><img src="http://selab.hanyang.ac.kr/courses/cse326/2015/problems/images/w3c-css.png" alt="css validation link"/></a>
