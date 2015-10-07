@@ -13,20 +13,17 @@ h1#title{
 }
 h1#link{
 	color:black;
-	}
+}
 	
-.linkside{
-	overflow:hidden;
-	}
 
-	
+
+
 .article{
-	border-bottom:2px blue dashed;
-	text-align:right;
-	
+	overflow:hidden;
 	
 }
-.section{
+.section{	
+
 	border:4px #1D2475 solid;
 	background-color:#CCCCCC;
 	padding:5px;
@@ -38,16 +35,16 @@ h1#link{
 	margin-left:15%;
 	margin-right:15%;
 	background-image:url("blueTextureBG.jpg");
-	}
+}
 
 	
 * * :hover:not(div){
-background-color: yellow;
+	background-color: yellow;
 }
 
 .profileimg{
 	float:right;
-	}
+}
 	
 #header{
 	overflow:hidden;
@@ -63,4 +60,10 @@ border-radius:15px;
 background-color:blue;
 float:left;
 
+}
+
+h2{
+	text-align:right;
+	border-bottom:2px blue dashed;
+	
 }

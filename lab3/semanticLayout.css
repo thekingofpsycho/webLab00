@@ -15,16 +15,9 @@ h1#link{
 	color:black;
 	}
 	
-.linkside{
-	overflow:hidden;
-	}
-
 	
 article{
-	border-bottom:2px blue dashed;
-	text-align:right;
-	
-	
+	overflow:hidden;
 }
 section{
 	border:4px #1D2475 solid;
@@ -41,7 +34,7 @@ section{
 	}
 
 	
-* *:hover:not(section):not(header):not(aside):not(div){
+* *:hover:not(section):not(header):not(aside):not(div):not(article){
 background-color: yellow;
 }
 
@@ -63,4 +56,10 @@ border-radius:15px;
 background-color:blue;
 float:left;
 
+}
+
+h2{
+	text-align:right;
+	border-bottom:2px blue dashed;
+	
 }
