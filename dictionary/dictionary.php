@@ -38,7 +38,7 @@
             
             foreach($lines as $name){
             	$tokens = explode(" ", $name);
-            	echo $tokens[0];
+            	$lines = 
             } 
         ?>
         
