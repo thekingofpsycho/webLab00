@@ -1,3 +1,4 @@
+CREATE DATABASE college;
 USE college;
 create table student(
 	student_id integer primary key,
@@ -58,9 +59,12 @@ SELECT * FROM student WHERE year=3;
 SELECT * FROM student WHERE year=1 OR year=2; 
 SELECT * FROM student WHERE major=(SELECT dept_name FROM department WHERE dept_no=4);
 
-SELECT * FROM student WHERE student_id LIKE '2007%';
+SELECT * FROM student WHERE student_id LIKE '%2007%';
 SELECT * FROM student ORDER BY student_id;
 SELECT * FROM student GROUP BY major HAVING AVG(year)>3;
-SELECT * FROM student WHERE major='Business Administration' AND student_id LIKE '2007%'; 
+SELECT * FROM student WHERE major='Business Administration' AND student_id LIKE '%2007%' limit 2; 
 
-SELECT * 
+CREATE DATABESE world;
+USE world;
+
+SELECT * FROM countries WHERE independence_year=1948;
