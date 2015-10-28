@@ -68,3 +68,5 @@ CREATE DATABESE world;
 USE world;
 
 SELECT * FROM countries WHERE independence_year=1948;
+SELECT * FROM countries WHERE country_code = (SELECT country_code WHERE language='English' OR language='French');
+
