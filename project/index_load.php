@@ -13,6 +13,11 @@
         	$this->db->exec("INSERT INTO tweets (contents, author,time) VALUES ('$tweet[1]', '$tweet[0]', now());");
             //Fill out here
         }
+        public function feed_add($tweet) // This function inserts a tweet
+        {
+        	$this->db->exec("INSERT INTO tweets (contents, author,time) VALUES ('$tweet[1]', '$tweet[0]', now());");
+            //Fill out here
+        }
         public function delete($no) // This function deletes a tweet
         {
         	//$no = db->quote($no);
@@ -24,24 +29,29 @@
         }
         # Ex 6: hash tag
         # Find has tag from the contents, add <a> tag using preg_replace() or preg_replace_callback()
-        public function loadTweets() // This function load all tweets
+        public function newproblem() // This function load all tweets
         {
         	$loadtweet=$this->db->query("SELECT * FROM tweets");
         	
         	return $loadtweet;
             //Fill out here
         }
-        public function searchTweets($type, $query) // This function load tweets meeting conditions
+        
+        public function hardproblem() // This function load all tweets
         {
+        	$loadtweet=$this->db->query("SELECT * FROM tweets");
         	
-        	if($type=="Author"){
-        		$loadtweet=$this->db->query("SELECT * FROM tweets WHERE author like '%$query%';");
-        	}
-        	else if($type=="Content"){
-        		$loadtweet=$this->db->query("SELECT * FROM tweets WHERE contents like '%$query%';");
-        	}
         	return $loadtweet;
             //Fill out here
         }
+        
+        public function myproblem() // This function load all tweets
+        {
+        	$loadtweet=$this->db->query("SELECT * FROM tweets");
+        	
+        	return $loadtweet;
+            //Fill out here
+        }
+       
     }
 ?>

@@ -1,0 +1,148 @@
+/*2011036782 안정기*/	
+#brand{
+	//background-color:#dcedff;
+	padding-top:0px;
+	padding-bottom:10px;
+}
+#brand img{
+	width:350px;
+	height:150px;
+}
+#brand div a{
+	text-decoration:none;
+	
+}
+nav > div > div > a:hover {
+    color: #ffd200;
+    cursor: pointer;
+}
+nav > div > div:hover {
+    color: #ffd200;
+    cursor: pointer;
+}
+nav > div > div > a {
+font-family: "맑은 고딕";
+    font-size:20px;
+    color: white;
+	text-decoration:none;
+	
+	}
+nav > div{
+	font-family: "맑은 고딕";
+    font-size:20px;
+    color: white;
+    overflow:hidden;
+    margin: 0 auto;
+    text-align:center;
+    padding-left:28%;
+    
+    
+}
+nav > div div:hover {
+    color: #ffd200;
+    cursor: pointer;
+    
+}
+nav > div div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 80px;
+	float:left;
+	text-align:center;
+}
+nav{
+	background-color: #0084ff;
+}
+
+article>div{    
+	font-family: "맑은 고딕";
+	overflow:hidden;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    text-align:center;
+}
+
+article > div > div{
+    padding-top: 5px;
+	font-weight:bold;
+	background-color: #006cd1;
+	color:white;
+	font-size:20px;
+	text-align:center;
+}
+
+
+footer > div{
+    overflow:hidden;
+	font-size:15px;
+}
+
+footer > div >div{
+	float:left;
+	width:19.8%;
+	text-align:center;
+	//border:1px solid black;
+	
+}
+
+footer >div >div >img{
+	width:120px;
+	height:140px;
+	}
+	
+	
+.bt {
+	background-color:#0084ff;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:7px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.bt:hover {
+	background-color:#5cbf2a;
+}
+.bt:active {
+	position:relative;
+	top:1px;
+}
+
+.feed{
+	width:90%;
+	height:320px;
+	font-size:20px;
+	color:#0084ff;
+}
+
+
+
+.info, .success, .warning, .error, .validation {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.info {
+color: #00529B;
+background-color: #BDE5F8;
+}
+.success {
+color: #4F8A10;
+background-color: #DFF2BF;
+}
+.warning {
+color: #9F6000;
+background-color: #FEEFB3;
+}
+.error {
+color: #D8000C;
+background-color: #FFBABA;
+}

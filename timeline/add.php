@@ -1,21 +1,21 @@
 <?php
-	include "timeline.php";
-	$tweets = array();
-	$tweets[0]="aaa";
-	$tweets[1]="bbb";
-	$add = new TimeLine();
-	$add->add($tweets);
+	
     # Ex 4 : Write a tweet
     try {
-        /*
-        if () { validate author & content
-            call add function
-            header("Location:index.php"); redirect to index.php
-        } else {
-            header("Loaction:error.php");
+    	include "timeline.php";
+		$tweets = array();
+		$tweets[0]=$_POST['author'];
+		$tweets[1]=$_POST['content'];
+       if(strlen($tweets[0]) >= 1 && preg_match("/^[a-zA-Z]+(([ -]?[a-zA-Z])+)$/i", $tweets[0]) && strlen($tweets[0]) <= 20 && isset($tweets[0]) && isset($tweets[1])){
+            $add = new TimeLine();
+			$add->add($tweets);
+            header("Location:index.php");
         }
-        */
+        else {
+            header("Location:error.php");
+        }
+        
     } catch(Exception $e) {
-        /* header("Loaction:error.php"); */
+        header("Location:error.php");
     }
 ?>
