@@ -12,12 +12,13 @@ document.observe('dom:loaded', function(){
 });
 
 function stopToStart(){
-    stopGame();
 	clearInterval(timer);
+    stopGame();
     startToSetTarget();
 }
 
 function stopGame(){
+	clearInterval(timer);
 	$("state").innerHTML="Stop";
 	$("answer").innerHTML="0/0";
 	targetBlocks=[];
